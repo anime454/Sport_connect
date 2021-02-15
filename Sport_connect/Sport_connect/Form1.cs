@@ -80,15 +80,19 @@ namespace Sport_connect
         private void button1_Click_1(object sender, EventArgs e)
         {
             mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-            byte[] a = BitConverter.GetBytes(15);
-            mySerialPort.Write(a , 0, 1);
+            byte[] operation = BitConverter.GetBytes(255);
+            byte[] value = BitConverter.GetBytes(15);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-           mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-           byte[] a = BitConverter.GetBytes(-14);
-           mySerialPort.Write(a , 0, 1);
+            byte[] operation = BitConverter.GetBytes(254);
+            byte[] value = BitConverter.GetBytes(15);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+
         }
 
    
