@@ -8,3 +8,23 @@ C:\Users\localhost_pc\Desktop\Sport_connect\Sport_connect\Sport_connect\Sport_co
 C:\Users\localhost_pc\Desktop\Sport_connect\Sport_connect\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csproj.CoreCompileInputs.cache
 C:\Users\localhost_pc\Desktop\Sport_connect\Sport_connect\Sport_connect\Sport_connect\obj\Debug\Sport_connect.exe
 C:\Users\localhost_pc\Desktop\Sport_connect\Sport_connect\Sport_connect\Sport_connect\obj\Debug\Sport_connect.pdb
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\bin\Debug\Sport_connect.exe.config
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\bin\Debug\Sport_connect.exe
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\bin\Debug\Sport_connect.pdb
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csprojAssemblyReference.cache
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.Form1.resources
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.Properties.Resources.resources
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csproj.GenerateResource.cache
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csproj.CoreCompileInputs.cache
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.exe
+C:\Users\job\Downloads\New folder (2)\Sport_connect-master\Sport_connect\Sport_connect\obj\Debug\Sport_connect.pdb
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\bin\Debug\Sport_connect.exe.config
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\bin\Debug\Sport_connect.exe
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\bin\Debug\Sport_connect.pdb
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csprojAssemblyReference.cache
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.Form1.resources
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.Properties.Resources.resources
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csproj.GenerateResource.cache
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.csproj.CoreCompileInputs.cache
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.exe
+C:\Users\localhost_pc\Desktop\job1\Sport_connect\Sport_connect\obj\Debug\Sport_connect.pdb

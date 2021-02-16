@@ -20,7 +20,13 @@ namespace Sport_connect
         }
         SerialPort mySerialPort = new SerialPort();
         public delegate void UpdateTextBoxDelegate(string value);
-
+        int isclick = 1;
+        int tb1 = 0;
+        int tb2 = 0;
+        int tb3 = 0;
+        int tb4 = 0;
+        int tb5 = 0;
+        int tb6 = 0;
         public void Form1_Load(object sender, EventArgs e)
         {
             mySerialPort.PortName = "COM6";
@@ -48,9 +54,23 @@ namespace Sport_connect
         public void UpdateTextBoxThread()
         {
         }
-        public void InvokeUpdateTextBox(string loop)
+        public void InvokeUpdateTextBox(string value)
         {
-            textBox1.Text = loop;
+            int ivalue = int.Parse(value);
+
+            if ( isclick == 1 ) {
+                textBox1.Text = value;
+            } else if ( isclick == 2 ) {
+                textBox3.Text = value;
+            } else if ( isclick == 3 ) {
+                textBox4.Text = value;
+            } else if ( isclick == 4 ) {
+                textBox5.Text = value;
+            } else if ( isclick == 5 ) {
+                textBox6.Text = value;
+            } else if ( isclick == 6 ) {
+                textBox8.Text = value;
+            }
         }
 
         public static void enable_botton()
@@ -82,17 +102,23 @@ namespace Sport_connect
             mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             byte[] operation = BitConverter.GetBytes(255);
             byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(201);
             mySerialPort.Write(operation , 0, 1);
             mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 1;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             byte[] operation = BitConverter.GetBytes(254);
             byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(201);
             mySerialPort.Write(operation , 0, 1);
             mySerialPort.Write(value , 0, 1);
-
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 1;
         }
 
    
@@ -104,6 +130,140 @@ namespace Sport_connect
         public void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(255);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(202);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 2;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(255);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(203);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 3;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(255);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(204);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 4;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(255);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(205);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 5;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(255);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(206);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 6;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(254);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(202);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 2;
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(254);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(203);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 3;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(254);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(204);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 4;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(254);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(205);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 5;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
+            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            byte[] operation = BitConverter.GetBytes(254);
+            byte[] value = BitConverter.GetBytes(15);
+            byte[] servo_id = BitConverter.GetBytes(206);
+            mySerialPort.Write(operation , 0, 1);
+            mySerialPort.Write(value , 0, 1);
+            mySerialPort.Write(servo_id, 0, 1);
+            isclick = 6;
         }
     }
 }
