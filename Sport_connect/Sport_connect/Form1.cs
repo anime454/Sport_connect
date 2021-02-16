@@ -23,7 +23,7 @@ namespace Sport_connect
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            mySerialPort.PortName = "COM6";
+            mySerialPort.PortName = "COM7";
             mySerialPort.BaudRate = 9600;
             mySerialPort.Parity = Parity.None;
             mySerialPort.StopBits = StopBits.One;
@@ -102,6 +102,11 @@ namespace Sport_connect
         }
 
         public void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
