@@ -56,30 +56,6 @@ int dataup() {
   }
 }
 
-int servo1(servodegree) {
-  servo1.write(servodegree);
-}
-
-int servo2(servodegree) {
-  servo2.write(servodegree);
-}
-
-int servo3(servodegree) {
-  servo3.write(servodegree);
-}
-
-int servo4(servodegree) {
-  servo4.write(servodegree);
-}
-
-int servo5(servodegree) {
-  servo5.write(servodegree);
-}
-
-int servo6(servodegree) {
-  servo6.write(servodegree);
-}
-
 
 int check_servo_id (int input, int servodegree) {
   int servo_id = 0 ;
@@ -101,7 +77,7 @@ int check_servo_id (int input, int servodegree) {
   }
   else if ( inpur == 256 ) {
       servo6.write(servodegree);
-  }
+  } else {Serial.println("ERROR");}
 
 }
 

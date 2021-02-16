@@ -63,19 +63,19 @@ int check_servo_id (int input, int servodegree) {
   if (input == 251) {
       servo1.write(servodegree);
   } 
-  else if ( inpur == 252 ) {
+  else if ( input == 252 ) {
       servo2.write(servodegree);
   }
-  else if ( inpur == 253 ) {
+  else if ( input == 253 ) {
       servo3.write(servodegree);
   }
-  else if ( inpur == 254 ) {
+  else if ( input == 254 ) {
       servo4.write(servodegree);
   }
-  else if ( inpur == 255 ) {
+  else if ( input == 255 ) {
       servo5.write(servodegree);
   }
-  else if ( inpur == 256 ) {
+  else if ( input == 256 ) {
       servo6.write(servodegree);
   } else {Serial.println("ERROR");}
 
