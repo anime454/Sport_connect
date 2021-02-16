@@ -54,6 +54,8 @@ namespace Sport_connect
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -117,6 +119,7 @@ namespace Sport_connect
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(196, 89);
             this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "0";
             // 
             // button3
             // 
@@ -373,11 +376,31 @@ namespace Sport_connect
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(811, 915);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(180, 89);
+            this.button15.TabIndex = 25;
+            this.button15.Text = "connect";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(534, 915);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
+            this.comboBox1.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1890, 1198);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button15);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button14);
@@ -437,6 +460,8 @@ namespace Sport_connect
         public System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
