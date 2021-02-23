@@ -8,7 +8,13 @@ int servodegree5 = 0;
 int servodegree6 = 0;
 int input_data = 0;
 int i = 0;
- int sv1 = 0;
+int sv1 = 0;
+int sv2 = 0;
+int sv3 = 0;
+int sv4 = 0;
+int sv5 = 0;
+int sv6 = 0;
+int times = 25;
 #include <Servo.h>
 Servo servo1, servo2, servo3, servo4, servo5, servo6;
 
@@ -57,132 +63,167 @@ int run (int input, int main_servodegree) {
         }
           for (sv1 = 0; sv1 <= servodegree1; sv1=++i){
              Serial.println(sv1); 
-            delay(15);}
-             
+            delay(times);
+            }  
         }
-//        else if (servodegree1 > 180) {
-//          servodegree1 = 180  ;
-//        }
       }
       else if (main_command == 2) {
-        if (servodegree1 >= 15) {
+        if (servodegree1 >= 0) {
           servodegree1 = servodegree1 - main_servodegree;
             if (servodegree1 < 0) {
           servodegree1 = 0  ;
         }
           for (sv1 >= 0; sv1 >= servodegree1; sv1= --i){
              Serial.println(sv1); 
-            delay(15);}
+            delay(times);}
              
         }
         }
-        //else if (servodegree1 < 0) {
-          //servodegree1 = 0  ;
-        //}
-     // }
-     // Serial.println(sv1); 
+        
       servo1.write(sv1);
   } 
+
+  
   else if ( input == 202 ) {
       if (main_command == 1) {
         if (servodegree2 < 180) {
           servodegree2 = servodegree2 + main_servodegree;
-        }
-        else if (servodegree2 > 180) {
+           if (servodegree2 > 180) {
           servodegree2 = 180  ;
+        }
+          for (sv2 = 0; sv2 <= servodegree2; sv2=++i){
+             Serial.println(sv2); 
+            delay(times);
+            }  
         }
       }
       else if (main_command == 2) {
         if (servodegree2 >= 0) {
           servodegree2 = servodegree2 - main_servodegree;
-        }
-        else if (servodegree2 < 0) {
+            if (servodegree2 < 0) {
           servodegree2 = 0  ;
         }
-      }
-      Serial.println(servodegree2); 
-      servo2.write(servodegree2);
+          for (sv2 >= 0; sv2 >= servodegree2; sv2= --i){
+             Serial.println(sv2); 
+            delay(times);}
+             
+        }
+        }
+        
+  
+      servo2.write(sv2);
   }
   else if ( input == 203 ) {
-      if (main_command == 1) {
+       if (main_command == 1) {
         if (servodegree3 < 180) {
           servodegree3 = servodegree3 + main_servodegree;
-        }
-        else if (servodegree3 > 180) {
+           if (servodegree3 > 180) {
           servodegree3 = 180  ;
         }
+          for (sv3 = 0; sv3 <= servodegree3; sv3=++i){
+             Serial.println(sv3); 
+            delay(times);
+            }  
+        }
       }
       else if (main_command == 2) {
-        if (servodegree3 >= 15) {
+        if (servodegree3 >= 0) {
           servodegree3 = servodegree3 - main_servodegree;
-        }
-        else if (servodegree3 < 0) {
+            if (servodegree3 < 0) {
           servodegree3 = 0  ;
         }
-      }
-      Serial.println(servodegree3); 
-      servo3.write(servodegree3);
+          for (sv3 >= 0; sv3 >= servodegree3; sv3= --i){
+             Serial.println(sv3); 
+            delay(times);}
+             
+        }
+        }   
+      servo3.write(sv3);
   }
   else if ( input == 204 ) {
-      if (main_command == 1) {
+        if (main_command == 1) {
         if (servodegree4 < 180) {
           servodegree4 = servodegree4 + main_servodegree;
-        }
-        else if (servodegree4 > 180) {
+           if (servodegree4 > 180) {
           servodegree4 = 180  ;
         }
+          for (sv4 = 0; sv4 <= servodegree4; sv4=++i){
+             Serial.println(sv4); 
+            delay(times);
+            }  
+        }
       }
       else if (main_command == 2) {
-        if (servodegree4 >= 15) {
+        if (servodegree4 >= 0) {
           servodegree4 = servodegree4 - main_servodegree;
-        }
-        else if (servodegree4 < 0) {
+            if (servodegree4 < 0) {
           servodegree4 = 0  ;
         }
-      }
-      Serial.println(servodegree4); 
-      servo4.write(servodegree4);
+          for (sv4 >= 0; sv4 >= servodegree4; sv4= --i){
+             Serial.println(sv4); 
+            delay(times);
+        }    
+        }
+        }
+      servo4.write(sv4);
   }
   else if ( input == 205 ) {
-      if (main_command == 1) {
+        if (main_command == 1) {
         if (servodegree5 < 180) {
           servodegree5 = servodegree5 + main_servodegree;
-        }
-        else if (servodegree5 > 180) {
+           if (servodegree5 > 180) {
           servodegree5 = 180  ;
         }
+          for (sv5 = 0; sv5 <= servodegree5; sv5=++i){
+             Serial.println(sv5); 
+            delay(times);
+            }  
+        }
       }
       else if (main_command == 2) {
-        if (servodegree5 >= 15) {
+        if (servodegree5 >= 0) {
           servodegree5 = servodegree5 - main_servodegree;
-        }
-        else if (servodegree5 < 0) {
+            if (servodegree5 < 0) {
           servodegree5 = 0  ;
         }
-      }
-      Serial.println(servodegree5); 
-      servo5.write(servodegree5);
+          for (sv5 >= 0; sv5 >= servodegree5; sv5= --i){
+             Serial.println(sv5); 
+            delay(times);}
+             
+        }
+        }
+         
+      servo5.write(sv5);
   }
   else if ( input == 206 ) {
-      if (main_command == 1) {
+        if (main_command == 1) {
         if (servodegree6 < 180) {
           servodegree6 = servodegree6 + main_servodegree;
-        }
-        else if (servodegree6 > 180) {
+           if (servodegree6 > 180) {
           servodegree6 = 180  ;
+        }
+          for (sv6 = 0; sv6 <= servodegree6; sv6=++i){
+             Serial.println(sv6); 
+            delay(times);
+            }  
         }
       }
       else if (main_command == 2) {
-        if (servodegree6 >= 15) {
+        if (servodegree6 >= 0) {
           servodegree6 = servodegree6 - main_servodegree;
-        }
-        else if (servodegree6 < 0) {
+            if (servodegree6 < 0) {
           servodegree6 = 0  ;
         }
-      }
-      Serial.println(servodegree6); 
-      servo6.write(servodegree6);
-  } else {Serial.println("ERROR");}
+          for (sv6 >= 0; sv6 >= servodegree6; sv6= --i){
+             Serial.println(sv6); 
+            delay(times);}
+             
+        }
+        }
+        
+      servo6.write(sv6);
+  } 
+  else {Serial.println("ERROR");}
 
   main_command = 0;
 }
